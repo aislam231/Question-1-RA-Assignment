@@ -40,3 +40,17 @@ The collection includes:
 The script organizes the collected HTML files into separate folders for each incubator, keeping current webpages and archived captures separate. This facilitates systematic examination of website content over time.
 
 **Note:** Archived captures may not be available for every month or every webpage. The automation records these gaps rather than assuming that a webpage exists for every month.
+## Scraped HTML Files and Collection History
+
+The folder [`scraped_html_top20`](scraped_html_top20/) contains the HTML files collected by the Python automation script for the top 20 startup incubators.
+
+It includes:
+
+- **Current Homepage Files:** The downloaded HTML files of the incubators' current homepages.
+- **Current About Us Pages:** The downloaded HTML files of the About Us pages, wherever successfully identified and collected.
+- **Archived HTML Files:** Available archived versions of the homepage and About Us pages, organized by incubator, year, and month, covering January 2022 to September 2026.
+- **Scraping History and Reports:** Records of the scraping process, including successful downloads, unavailable monthly archive captures, and failed operations, where recorded.
+
+The folder structure keeps the collected webpages organized by incubator and separates current pages from archived versions. This makes it easier to inspect website content and examine how it has changed over time.
+
+**Note:** The availability of archived HTML files varies by incubator, webpage, and month. Missing captures indicate that a suitable archived version was not found or collected for that period.
