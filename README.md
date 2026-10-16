@@ -23,7 +23,7 @@ It includes the CRITIC-based rankings and scores, website links, basic incubator
 
 ## Python Automation Code for Website Scraping
 
-The Jupyter Notebook [`python automation code.ipynb`](python%20automation%20code.ipynb) contains the annotated Python automation code developed to collect the current and archived webpages of the top 20 startup incubators.
+The Jupyter Notebook [`python automation code.py`](python%20automation%20code.py) contains the annotated Python automation code developed to collect the current and archived webpages of the top 20 startup incubators.
 
 ### Pages Collected
 For each incubator, the automation aims to collect:
