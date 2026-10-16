@@ -54,4 +54,5 @@ It includes:
 The folder structure keeps the collected webpages organized by incubator and separates current pages from archived versions. This makes it easier to inspect website content and examine how it has changed over time.
 
 **Note-1:** The availability of archived HTML files varies by incubator, webpage, and month. Missing captures indicate that a suitable archived version was not found or collected for that period.
+
 **Note-2:** Since the `scraped_html_top20` folder contains a large number of HTML files and occupies substantial storage space, the complete folder has been uploaded to the GitHub repository directly through Visual Studio Code (VS Code).
