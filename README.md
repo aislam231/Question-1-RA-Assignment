@@ -21,25 +21,55 @@ The spreadsheet was prepared by joining information from multiple CSV files to b
 
 It includes the CRITIC-based rankings and scores, website links, basic incubator information, and other collected features available in the source datasets. The spreadsheet provides a comprehensive overview of the selected incubators and facilitates further examination of their characteristics.
 
+
 ## Python Automation Code for Website Scraping
 
 The Jupyter Notebook [`python automation code.py`](python%20automation%20code.py) contains the annotated Python automation code developed to collect the current and archived webpages of the top 20 startup incubators.
 
+### Prerequisites and Setup
+
+Before running the Python code, install the required packages using the following command:
+
+```bash
+pip install pandas requests beautifulsoup4 wayback
+```
+
+The required packages are:
+
+- `pandas` — for data handling and processing.
+- `requests` — for sending HTTP requests and retrieving webpages.
+- `beautifulsoup4` — for parsing HTML content and extracting webpage links.
+- `wayback` — for accessing archived webpages through the Internet Archive's Wayback Machine.
+
+The modules `pathlib`, `datetime`, `urllib.parse`, `calendar`, `re`, and `time` are part of Python's standard library and do not require separate installation.
+
+**Important:** Before running the code, ensure that the following two files are placed in the same directory:
+
+1. `critic_top20_all_features.csv`
+2. `python automation code.py`
+
+The CSV file provides the incubator names and website links required by the automation script. Run the Python code from this directory so that it can locate the input CSV file correctly.
+
 ### Pages Collected
+
 For each incubator, the automation aims to collect:
+
 - **Homepage:** The incubator's main website page.
 - **About Us Page:** The page providing information about the incubator, discovered automatically where possible.
 
 ### Webpage Archiving Frequency
+
 The automation searches for the **earliest available webpage capture in each month**, covering the period from **January 2022 to September 2026**, approximately five years.
 
 The collection includes:
+
 - Current versions of the homepage and About Us page.
 - Archived versions of these pages for all months in the specified period for which suitable captures are available.
 
 The script organizes the collected HTML files into separate folders for each incubator, keeping current webpages and archived captures separate. This facilitates systematic examination of website content over time.
 
 **Note:** Archived captures may not be available for every month or every webpage. The automation records these gaps rather than assuming that a webpage exists for every month.
+
 ## Scraped HTML Files and Collection History
 
 The folder [`scraped_html_top20`](scraped_html_top20/) contains the HTML files collected by the Python automation script for the top 20 startup incubators.
