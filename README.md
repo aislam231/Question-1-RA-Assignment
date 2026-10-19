@@ -72,7 +72,7 @@ The script organizes the collected HTML files into separate folders for each inc
 
 **Note:** Archived captures may not be available for every month or every webpage. The automation records these gaps rather than assuming that a webpage exists for every month.
 
-## 2.2 Scraped HTML Files and Collection History
+### 2.2 Scraped HTML Files and Collection History
 
 The folder [`scraped_html_top20`](scraped_html_top20/) contains the HTML files collected by the Python automation script for the top 20 startup incubators.
 
